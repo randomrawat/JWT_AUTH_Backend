@@ -12,6 +12,7 @@ app.use(bodyParser.json())
 app.use(cors({
   origin: 'https://jwt-auth-frontend.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }))
 app.use('/auth', AuthRouter)
