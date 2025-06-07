@@ -10,7 +10,7 @@ const productRouter = require('./Routes/productRouter')
 
 app.use(bodyParser.json())
 app.use(cors({
-  origin: ['https://jwt-auth-frontend.vercel.app', 'http://localhost:3000'],
+  origin: 'https://jwt-auth-frontend.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }))
